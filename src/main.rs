@@ -21,6 +21,7 @@ fn main () {
 
         print!(" ");
     }
+    println!("");
 }
 
 fn inrange (number: i32, min: i32, max: i32) -> bool {
