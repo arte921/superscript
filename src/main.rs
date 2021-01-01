@@ -4,11 +4,9 @@ const LETTERS: [&str; 26] = ["ᵃ", "ᵇ", "ᶜ", "ᵈ", "ᵉ", "ᶠ", "ᵍ", "�
 const GETALLEN: [&str; 10] = ["⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹"];
 
 fn main () {
-
     for woord in env::args().skip(1) {
         for letter in woord.chars() {
             let charcode = letter as i32;
-
 
             print!("{}", if inrange(charcode, 65, 90) {
                 LETTERS[(charcode - 65) as usize].to_string()
